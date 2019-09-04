@@ -1,0 +1,22 @@
+body {
+    font-family:'Questrial';
+     margin:0 auto; 
+     max-width: 1700px; 
+     padding-top: 70px;  
+}
+
+.navbar{
+    padding-right:15px !important;
+}
+
+@font-face {
+    font-family:'Questrial';
+    src: url('../fonts/Questrial-Regular.ttf');
+}
+
+footer{
+    background-color: #0287cf;
+    color: #FFF;
+    margin:0 auto;
+    max-width: 1700px;
+}

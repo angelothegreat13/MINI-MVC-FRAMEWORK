@@ -1,0 +1,17 @@
+#Turning ON the RewriteEngine
+RewriteEngine On
+
+#Giving Condition to RewriteEngine
+
+#IF THE REQUEST FILENAME IS NOT A DIRECTORY
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#IF THE REQUEST FILENAME IS NOT A FILE
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#SO THAT WE CAN PULL OUT ANYTHING INSIDE THIS DIRECTORY
+RewriteCond $1 !^(classes|config|core|public)
+
+#RULE
+RewriteRule ^(.+)$ index.php/$1 [L]
+
